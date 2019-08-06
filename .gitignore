@@ -1,0 +1,41 @@
+.gradle
+gradle
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+### customs ###
+jdbc-*.properties
+private.yaml
+*.log
+*.log.gz
+kafka_client_jaas.conf
+application-private.yaml
+lombok.config
+
+out/
+build/
+logs/
+
+private.properties
