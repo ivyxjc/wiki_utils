@@ -8,6 +8,7 @@ class F1Driver(val number: Int) {
     var rank: Int = Int.MIN_VALUE
     var pole = false
     var fastestLap = false
+    var dagger = false
 
     override fun toString(): String {
         return ToStringBuilder.reflectionToString(this)
@@ -35,4 +36,23 @@ class F1Match(val name: String) {
 
 class F1Season(val year: String) {
     lateinit var matches: MutableMap<String, F1Match>
+}
+
+class WikiF1Team(val name: String) {
+    val driver1Builder = DriverBuilder()
+    val driver2Builder = DriverBuilder()
+}
+
+
+class DriverBuilder {
+    var driverNum: Int = -1
+    val builder = StringBuilder()
+
+    fun append(str: String) {
+        builder.append(str)
+    }
+
+    override fun toString(): String {
+        return builder.toString()
+    }
 }
